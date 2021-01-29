@@ -15,3 +15,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # EUICC
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay
+
+# Touch
+include hardware/google/pixel/touch/device.mk
