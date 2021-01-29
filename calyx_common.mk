@@ -14,3 +14,6 @@ PRODUCT_PACKAGES += \
 # Radio
 DEVICE_MANIFEST_FILE += \
     device/google/gs101/manifest_radio.xml
+
+# Touch
+include hardware/google/pixel/touch/device.mk

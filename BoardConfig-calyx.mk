@@ -6,6 +6,9 @@
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
+# Compatibility matrix
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/calyx/config/device_framework_matrix.xml
+
 # Partitions
 AB_OTA_PARTITIONS += \
     vendor \
