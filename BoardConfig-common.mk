@@ -104,6 +104,8 @@ ifneq ($(PRODUCT_BUILD_VBMETA_IMAGE),false)
 AB_OTA_PARTITIONS += vbmeta
 endif
 
+AB_OTA_PARTITIONS += vendor_dlkm
+
 # EMULATOR common modules
 BOARD_EMULATOR_COMMON_MODULES := liblight
 
@@ -175,6 +177,10 @@ TARGET_COPY_OUT_PRODUCT := product
 # system_ext.img
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+
+# vendor_dlkm.img
+BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 ########################
 # Video Codec
