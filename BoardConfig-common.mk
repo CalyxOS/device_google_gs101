@@ -166,6 +166,10 @@ TARGET_COPY_OUT_PRODUCT := product
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 
+# vendor_dlkm.img
+BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
+
 ########################
 # Video Codec
 ########################
