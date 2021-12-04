@@ -429,3 +429,5 @@ BOARD_KERNEL_CMDLINE += at24.write_timeout=100
 BOARD_KERNEL_CMDLINE += log_buf_len=1024K
 
 -include vendor/google_devices/gs101/proprietary/BoardConfigVendor.mk
+
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
