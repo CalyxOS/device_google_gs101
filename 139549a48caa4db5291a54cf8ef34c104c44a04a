@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "846738ad_49c12da5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2021-12-19T11:39:25Z",
+      "side": 1,
+      "message": "Replace with https://review.calyxos.org/q/Ia0fff6ffc532cc6b5e41f8ac242d00e64627cee8 ?",
+      "revId": "139549a48caa4db5291a54cf8ef34c104c44a04a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
