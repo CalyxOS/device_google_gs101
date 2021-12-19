@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f320c634_764bf727",
+        "filename": "BoardConfig-calyx.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2021-12-19T11:45:16Z",
+      "side": 1,
+      "message": "# Partitions\nAB_OTA_PARTITIONS +\u003d \\\n    vendor_dlkm\nBOARD_VENDOR_DLKIMAGE_FILE_SYSTEM_TYPE :\u003d ext4\n\nI\u0027m pretty sure TARGET_COPY_OUT_VENDOR_DLKM is automatically set to the right path when you set the filesystem type.",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 42
+      },
+      "revId": "73757f1258a0bfa48021660153a5f8d5867352c9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
