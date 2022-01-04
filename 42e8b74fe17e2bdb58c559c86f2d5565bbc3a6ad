@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91ccd718_f7d7a8d1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-01-04T16:29:29Z",
+      "side": 1,
+      "message": "Works. Signed build with locked bootloader boots.\n\n`avbtool info_image` output looks ok.",
+      "revId": "42e8b74fe17e2bdb58c559c86f2d5565bbc3a6ad",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
