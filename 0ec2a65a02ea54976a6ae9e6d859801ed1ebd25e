@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5b00af60_02feacd8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-03-10T21:50:52Z",
+      "side": 1,
+      "message": "We can submit this before AOSP merge to make things easier",
+      "revId": "0ec2a65a02ea54976a6ae9e6d859801ed1ebd25e",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
