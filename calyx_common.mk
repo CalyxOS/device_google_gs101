@@ -6,3 +6,7 @@
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/gs101/overlay-calyx
+
+# EUICC
+PRODUCT_PACKAGES += \
+    EuiccSupportPixelOverlay
