@@ -16,7 +16,7 @@
 
 #include <PowerStatsAidl.h>
 #include <Gs101CommonDataProviders.h>
-#include "AocStateResidencyDataProvider.h"
+#include "AocTimedStateResidencyDataProvider.h"
 #include "DevfreqStateResidencyDataProvider.h"
 #include "DvfsStateResidencyDataProvider.h"
 #include "UfsStateResidencyDataProvider.h"
@@ -32,7 +32,7 @@
 #include <android/binder_process.h>
 #include <log/log.h>
 
-using aidl::android::hardware::power::stats::AocStateResidencyDataProvider;
+using aidl::android::hardware::power::stats::AocTimedStateResidencyDataProvider;
 using aidl::android::hardware::power::stats::DevfreqStateResidencyDataProvider;
 using aidl::android::hardware::power::stats::DvfsStateResidencyDataProvider;
 using aidl::android::hardware::power::stats::UfsStateResidencyDataProvider;
@@ -45,6 +45,8 @@ using aidl::android::hardware::power::stats::PowerStatsEnergyConsumer;
 constexpr char kBootHwSoCRev[] = "ro.boot.hw.soc.rev";
 
 void addAoC(std::shared_ptr<PowerStats> p) {
+    // When the given timeout is 0, the timeout will be replaced with "120ms * statesCount".
+    static const uint64_t TIMEOUT_MILLIS = 0;
     std::string prefix = "/sys/devices/platform/19000000.aoc/control/";
 
     // Add AoC cores (a32, ff1, hf0, and hf1)
@@ -56,8 +58,8 @@ void addAoC(std::shared_ptr<PowerStats> p) {
     };
     std::vector<std::pair<std::string, std::string>> coreStates = {
             {"DWN", "off"}, {"RET", "retention"}, {"WFI", "wfi"}};
-    p->addStateResidencyDataProvider(std::make_unique<AocStateResidencyDataProvider>(coreIds,
-            coreStates));
+    p->addStateResidencyDataProvider(std::make_unique<AocTimedStateResidencyDataProvider>(coreIds,
+            coreStates, TIMEOUT_MILLIS));
 
     // Add AoC voltage stats
     std::vector<std::pair<std::string, std::string>> voltageIds = {
@@ -68,7 +70,8 @@ void addAoC(std::shared_ptr<PowerStats> p) {
                                                                       {"UUD", "ultra_underdrive"},
                                                                       {"UD", "underdrive"}};
     p->addStateResidencyDataProvider(
-            std::make_unique<AocStateResidencyDataProvider>(voltageIds, voltageStates));
+            std::make_unique<AocTimedStateResidencyDataProvider>(voltageIds, voltageStates,
+                    TIMEOUT_MILLIS));
 
     // Add AoC monitor mode
     std::vector<std::pair<std::string, std::string>> monitorIds = {
@@ -78,7 +81,8 @@ void addAoC(std::shared_ptr<PowerStats> p) {
             {"MON", "mode"},
     };
     p->addStateResidencyDataProvider(
-            std::make_unique<AocStateResidencyDataProvider>(monitorIds, monitorStates));
+            std::make_unique<AocTimedStateResidencyDataProvider>(monitorIds, monitorStates,
+                    TIMEOUT_MILLIS));
 
     // Add AoC restart count
     const GenericStateResidencyDataProvider::StateResidencyConfig restartCountConfig = {
