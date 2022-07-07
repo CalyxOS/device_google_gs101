@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "81a64346_6a10378d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-07-07T11:02:49Z",
+      "side": 1,
+      "message": "Let\u0027s do the switch over after the security update is out.",
+      "revId": "6bbdfd253fd80c738a5db4c3e54fbbf4ce235a29",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
