@@ -1,7 +1,11 @@
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
-	device/google/gs101/gnss/47765/config/gps.cer:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cer \
+	device/google/gs101/gnss/47765/config/gps.cer:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cer
+
+ifneq (,$(filter oriole raven, $(subst _, ,$(TARGET_PRODUCT))))
+PRODUCT_COPY_FILES += \
 	device/google/gs101/gnss/47765/firmware/SensorHub.patch:$(TARGET_COPY_OUT_VENDOR)/firmware/SensorHub.patch
+endif
 
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 	PRODUCT_COPY_FILES += \
@@ -33,6 +37,7 @@ else ifneq (,$(filter slider whitefin, $(subst _, ,$(TARGET_PRODUCT))))
 	endif
 endif
 
+ifneq (,$(filter oriole raven, $(subst _, ,$(TARGET_PRODUCT))))
 PRODUCT_SOONG_NAMESPACES += \
 	device/google/gs101/gnss/47765
 
@@ -44,6 +49,7 @@ PRODUCT_PACKAGES += \
 	lhd \
 	scd \
 	android.hardware.gnss@2.1-service-brcm
+endif
 
 PRODUCT_PACKAGES_DEBUG += \
 	init.gps_log.rc
