@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d80fb6f_ca426b94",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-08-02T20:39:05Z",
+      "side": 1,
+      "message": "Not the first time we hit one of these.\n\nThe other two $(wildcard vendor/) in this file are not relevant.",
+      "revId": "944d2e7447c499daaf3edba9415b202c6a16ab41",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
