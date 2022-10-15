@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "12db4860_0a1f16d1",
+        "filename": "powerstats/Gs101CommonDataProviders.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-10-15T00:08:07Z",
+      "side": 1,
+      "message": "libaoc.c is proprietary so we\u0027re going by the old value from gs-common",
+      "revId": "3e1c1c8e01bb4cb701332b6998cb5e17b45b3574",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
