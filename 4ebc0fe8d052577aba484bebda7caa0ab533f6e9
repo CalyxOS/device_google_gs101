@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7563f6b6_60699e12",
+        "filename": "powerstats/Gs101CommonDataProviders.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-10-15T00:07:37Z",
+      "side": 1,
+      "message": "This commit was reverted before but that didn\u0027t have this change.",
+      "revId": "4ebc0fe8d052577aba484bebda7caa0ab533f6e9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
