@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1ba1c422_332dded0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-12-16T18:34:55Z",
+      "side": 1,
+      "message": "Commit message says we maintain a common overlay in our vendor, but currently we don\u0027t. I don\u0027t see another Gerrit change for that, either...? Other than that, it sounds reasonable enough to me.",
+      "revId": "1bbb06b6dd6c79c793ee024f2df9de37bdaac615",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
