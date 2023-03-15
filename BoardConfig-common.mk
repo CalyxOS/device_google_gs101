@@ -129,6 +129,9 @@ $(call soong_config_set,arm_gralloc,gralloc_ion_sync_on_lock,$(BOARD_USES_GRALLO
 # Graphics
 #BOARD_USES_EXYNOS_DATASPACE_FEATURE := true
 
+PLATFORM_SECURITY_PATCH := 2023-02-05
+PLATFORM_SECURITY_PATCH_TIMESTAMP := $(shell date -d 'TZ="GMT" $(PLATFORM_SECURITY_PATCH)' +%s)
+
 # Enable chain partition for system.
 BOARD_AVB_VBMETA_SYSTEM := system system_ext product
 BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
