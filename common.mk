@@ -68,6 +68,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,init.insmod.*.cfg,$(TARGET_KERNEL_DIR),$(TARGET_COPY_OUT_VENDOR_DLKM)/etc)
 
+# For usb restriction
+PRODUCT_PACKAGES += \
+        init.gs101.usb-policy.rc
+
 # For creating dtbo image
 PRODUCT_HOST_PACKAGES += \
 	mkdtimg
