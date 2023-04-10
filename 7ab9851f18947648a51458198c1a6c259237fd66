@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "97cbac7d_e3c2b077",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-04-10T20:33:18Z",
+      "side": 1,
+      "message": "When done testing, change to use ro.debuggable instead (currently commented out)",
+      "revId": "7ab9851f18947648a51458198c1a6c259237fd66",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
