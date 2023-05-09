@@ -16,6 +16,24 @@
       "message": "When done testing, change to use ro.debuggable instead (currently commented out)",
       "revId": "7ab9851f18947648a51458198c1a6c259237fd66",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "305c0dbd_9aa7a412",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-05-09T17:21:57Z",
+      "side": 1,
+      "message": "Ack, no longer applies",
+      "parentUuid": "97cbac7d_e3c2b077",
+      "revId": "7ab9851f18947648a51458198c1a6c259237fd66",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
