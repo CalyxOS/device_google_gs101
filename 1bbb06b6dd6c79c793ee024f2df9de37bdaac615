@@ -16,6 +16,24 @@
       "message": "Commit message says we maintain a common overlay in our vendor, but currently we don\u0027t. I don\u0027t see another Gerrit change for that, either...? Other than that, it sounds reasonable enough to me.",
       "revId": "1bbb06b6dd6c79c793ee024f2df9de37bdaac615",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cd3627de_19f5e896",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-05-10T13:13:44Z",
+      "side": 1,
+      "message": "I mixed that up with https://review.calyxos.org/q/config_locationExtraPackageNames\n\nThis is wrong then.",
+      "parentUuid": "1ba1c422_332dded0",
+      "revId": "1bbb06b6dd6c79c793ee024f2df9de37bdaac615",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
