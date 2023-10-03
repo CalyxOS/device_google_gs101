@@ -19,9 +19,5 @@ PRODUCT_PACKAGES += \
 # Lineage Health
 include hardware/google/pixel/lineage_health/device.mk
 
-# Security patch
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.kernel.security_patch=2023-10-05
-
 # Touch
 include hardware/google/pixel/touch/device.mk
