@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0ab20dcf_806c2c97",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-09T23:48:37Z",
+      "side": 1,
+      "message": "Script failing with USB OTG wireless input receiver, and the device is being detected during boot.",
+      "revId": "be113c92cbc05ef2ad9c8ba62e6d51c44930d53f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
