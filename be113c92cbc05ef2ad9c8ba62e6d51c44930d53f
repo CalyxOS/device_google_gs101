@@ -16,6 +16,24 @@
       "message": "Script failing with USB OTG wireless input receiver, and the device is being detected during boot.",
       "revId": "be113c92cbc05ef2ad9c8ba62e6d51c44930d53f",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f0fdb480_4693ce54",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-10T00:52:33Z",
+      "side": 1,
+      "message": "The script fails because the post-fs hasn\u0027t run yet to set the proper permissions on the usb_data_enabled file. We run the script as nobody:system, and usb_data_enabled is not yet set up for that. This wasn\u0027t an issue with `onrestart` because the `write` builtin presumably because init has access to do this just fine.\n\nI tried using init\u0027s `file` command to pass a read-write file descriptor, but that didn\u0027t work out (comlicated, still an selinux nightmare, no permission).",
+      "parentUuid": "0ab20dcf_806c2c97",
+      "revId": "be113c92cbc05ef2ad9c8ba62e6d51c44930d53f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
