@@ -34,6 +34,24 @@
       "parentUuid": "0ab20dcf_806c2c97",
       "revId": "be113c92cbc05ef2ad9c8ba62e6d51c44930d53f",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8ce091cb_372a29b4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-10T00:58:18Z",
+      "side": 1,
+      "message": "Something may have changed, perhaps since Android 13, because even using `write` for this doesn\u0027t work now in early-init:\n`[    1.192675] audit: type\u003d1400 audit(1704847988.088:4): avc:  denied  { write } for  pid\u003d1 comm\u003d\"init\" name\u003d\"usb_data_enabled\" dev\u003d\"sysfs\" ino\u003d813\n26 scontext\u003du:r:init:s0 tcontext\u003du:object_r:sysfs:s0 tclass\u003dfile permissive\u003d0`",
+      "parentUuid": "f0fdb480_4693ce54",
+      "revId": "be113c92cbc05ef2ad9c8ba62e6d51c44930d53f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
