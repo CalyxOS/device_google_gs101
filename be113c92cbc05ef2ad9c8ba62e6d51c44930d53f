@@ -87,6 +87,24 @@
       "message": "Try changing disable_usb_data so it does the same thing as enable_usb_data from [here](https://review.calyxos.org/c/CalyxOS/device_google_gs101/+/24087/1), except toggle every 1 and 0. Changing the OTG state seems to \"eject\" the USB device - I think.",
       "revId": "be113c92cbc05ef2ad9c8ba62e6d51c44930d53f",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4abb0a64_02a0f48e",
+        "filename": "usb/gadget/android.hardware.usb.gadget-service.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-10T01:19:57Z",
+      "side": 1,
+      "message": "1. The Logitech USB receiver does not show up. Good!\n2. Plugging in to a computer, USB debugging starts up immediately. Bad...",
+      "parentUuid": "dacec50e_78932a5c",
+      "revId": "be113c92cbc05ef2ad9c8ba62e6d51c44930d53f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
