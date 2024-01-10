@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b20a6256_c641e00c",
+        "filename": "usb/gadget/android.hardware.usb.gadget-service.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-10T14:08:03Z",
+      "side": 1,
+      "message": "Writing to the wrong path here, swapped with below",
+      "revId": "ab37f786755bd1b34b62d3f103f8c987499a7e07",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
