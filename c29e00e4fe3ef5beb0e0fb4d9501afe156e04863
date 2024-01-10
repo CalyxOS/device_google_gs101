@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b27e4e7_d37e9957",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-10T21:20:36Z",
+      "side": 1,
+      "message": "Tested working on Pixel 6a",
+      "revId": "c29e00e4fe3ef5beb0e0fb4d9501afe156e04863",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
