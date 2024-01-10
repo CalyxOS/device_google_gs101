@@ -72,6 +72,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9e767977_c76d3033",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-10T14:33:24Z",
+      "side": 1,
+      "message": "Ack, these issues are resolved in latest patchset (alongside other needed patches).",
+      "parentUuid": "aeae89d4_e4ce041e",
+      "revId": "be113c92cbc05ef2ad9c8ba62e6d51c44930d53f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dacec50e_78932a5c",
@@ -121,6 +139,24 @@
       "side": 1,
       "message": "My next thought was to change the OTG values to the wrong values and then back to the right ones, hoping that would disconnect the device on the other end but cause usb_data_enabled to start being respected. It does disconnect, but it reconnects shortly after.",
       "parentUuid": "4abb0a64_02a0f48e",
+      "revId": "be113c92cbc05ef2ad9c8ba62e6d51c44930d53f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f5366116_d6c501ff",
+        "filename": "usb/gadget/android.hardware.usb.gadget-service.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-10T14:33:24Z",
+      "side": 1,
+      "message": "Ack, the key was to look at what enableUsbData in Usb.cpp does, because that\u0027s what is ultimately used when changing to Deny usb in Settings, which *does* successfully detach devices and disable data.",
+      "parentUuid": "3a992f01_ce882e3a",
       "revId": "be113c92cbc05ef2ad9c8ba62e6d51c44930d53f",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
