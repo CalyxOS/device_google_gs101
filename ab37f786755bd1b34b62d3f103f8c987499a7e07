@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc5591f6_105ea333",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-10T14:24:57Z",
+      "side": 1,
+      "message": "If we wanted to use a service for disable_usb_data again, we would do this:\n```\nservice disable_usb_data /vendor/bin/init.enable_usb_data.sh /dev/null 0 /sys/class/typec/port0-partner /sys/class/typec/port0/data_role [host] /sys/devices/platform/11110000.usb/dwc3_exynos_otg_id 1 1 /sys/devices/platform/11110000.usb/dwc3_exynos_otg_b_sess 0 0 /sys/devices/platform/11110000.usb/usb_data_enabled 0 0\n    disabled\n    user nobody\n    group system\n    oneshot\n```\n\nIt\u0027s ugly. The `/dev/null 0` at the start skips messing with usb_data_enabled until the end, to match the order this all happens in Usb.cpp. And all of the port checking isn\u0027t even necessary... So if we really wanted or needed to use a service, we should probably optimize the script or add a different script.",
+      "revId": "ab37f786755bd1b34b62d3f103f8c987499a7e07",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b20a6256_c641e00c",
