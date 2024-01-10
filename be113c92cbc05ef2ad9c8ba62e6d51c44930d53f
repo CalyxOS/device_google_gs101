@@ -52,6 +52,24 @@
       "parentUuid": "f0fdb480_4693ce54",
       "revId": "be113c92cbc05ef2ad9c8ba62e6d51c44930d53f",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aeae89d4_e4ce041e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-10T01:12:00Z",
+      "side": 1,
+      "message": "If I try to fix the owner and mode of the file at the top of /system/core/rootdir/init.rc for testing, that fails due to selinux, too (too early). But if I set the user for this to `root`, the script succeeds, so I suspect it actually writes. The problem is that even though the script succeeds, USB is not ejected (the receiver is still seen).\n\nYou can even test by connecting the device with USB debugging, and set the value manually with adb. You can check that it\u0027s disabled, but you\u0027re still connected. So at least now, on some devices, setting usb_data_enabled does not lead to an immediate ejection of USB devices. That\u0027s the current problem, and the continuing problem. We don\u0027t want users to be affected if they start up their phones while connected to an untrusted device.",
+      "parentUuid": "8ce091cb_372a29b4",
+      "revId": "be113c92cbc05ef2ad9c8ba62e6d51c44930d53f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
