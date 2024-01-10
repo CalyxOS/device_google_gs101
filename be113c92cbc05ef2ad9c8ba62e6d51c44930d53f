@@ -105,6 +105,24 @@
       "parentUuid": "dacec50e_78932a5c",
       "revId": "be113c92cbc05ef2ad9c8ba62e6d51c44930d53f",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3a992f01_ce882e3a",
+        "filename": "usb/gadget/android.hardware.usb.gadget-service.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-10T01:31:31Z",
+      "side": 1,
+      "message": "My next thought was to change the OTG values to the wrong values and then back to the right ones, hoping that would disconnect the device on the other end but cause usb_data_enabled to start being respected. It does disconnect, but it reconnects shortly after.",
+      "parentUuid": "4abb0a64_02a0f48e",
+      "revId": "be113c92cbc05ef2ad9c8ba62e6d51c44930d53f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
