@@ -18,6 +18,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d5a9d80_49536c49",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-01-10T14:26:11Z",
+      "side": 1,
+      "message": "(And then we would add `exec_start disable_usb_data at the bottom of the early-init here - but as long as we are able to do this in the early-init here, there is no need for a service.)",
+      "parentUuid": "dc5591f6_105ea333",
+      "revId": "ab37f786755bd1b34b62d3f103f8c987499a7e07",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b20a6256_c641e00c",
