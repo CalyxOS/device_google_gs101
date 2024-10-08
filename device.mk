@@ -53,6 +53,9 @@ AB_OTA_POSTINSTALL_CONFIG += \
 	FILESYSTEM_TYPE_system=ext4 \
 POSTINSTALL_OPTIONAL_system=true
 
+# Set platform SPL to last update
+PLATFORM_SECURITY_PATCH := 2024-09-05
+
 # Set Vendor SPL to match platform
 VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
