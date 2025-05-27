@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f2f94c97_1f2f6bb9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2025-05-27T19:27:33Z",
+      "side": 1,
+      "message": "Is that all? Or is a `fastboot` command needed?\n\nCC: @tommy@calyxinstitute.org",
+      "revId": "7e57697909c0dc50bccc16ae572a0c76ed4a2975",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
