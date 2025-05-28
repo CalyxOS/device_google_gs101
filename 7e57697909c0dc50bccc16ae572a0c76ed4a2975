@@ -16,6 +16,24 @@
       "message": "Is that all? Or is a `fastboot` command needed?\n\nCC: @tommy@calyxinstitute.org",
       "revId": "7e57697909c0dc50bccc16ae572a0c76ed4a2975",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "29d59f6b_ac7f9e5b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2025-05-28T09:25:41Z",
+      "side": 1,
+      "message": "This prop triggers a write to /misc partition, which is then read by the bootloader after rebooting the device, so no fastboot command required.\n\nHowever first of all we need to test if this commit is required at all, or if Terminal app just works without messing with pKVM.",
+      "parentUuid": "f2f94c97_1f2f6bb9",
+      "revId": "7e57697909c0dc50bccc16ae572a0c76ed4a2975",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
