@@ -353,7 +353,7 @@ BOARD_DTBOIMG_PARTITION_SIZE := 0x01000000
 # Vendor ramdisk image for kernel development
 BOARD_BUILD_VENDOR_RAMDISK_IMAGE := true
 
-KERNEL_MODULE_DIR := $(TARGET_KERNEL_DIR)
+KERNEL_MODULE_DIR := $(TARGET_KERNEL_DIR)/vendor_dlkm/lib/modules
 KERNEL_MODULES := $(wildcard $(KERNEL_MODULE_DIR)/*.ko)
 
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(KERNEL_MODULE_DIR)/vendor_dlkm.modules.blocklist
@@ -366,19 +366,14 @@ BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(KERNEL_MODULE_DIR)/vendor_dlkm.m
 # favor of saving space via the kleaf property: strip_modules = True.
 BOARD_DO_NOT_STRIP_VENDOR_MODULES := true
 
-# Prebuilt kernel modules that are *not* listed in vendor_boot.modules.load
+# Prebuilt kernel modules that are *not* listed in modules.load
 BOARD_PREBUILT_VENDOR_RAMDISK_KERNEL_MODULES = fips140.ko
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_EXTRA = $(foreach k,$(BOARD_PREBUILT_VENDOR_RAMDISK_KERNEL_MODULES),$(if $(wildcard $(KERNEL_MODULE_DIR)/$(k)), $(k)))
 
-# Kernel modules that are listed in vendor_boot.modules.load
-# Starting from 6.1, use modules.load instead. It lists modules for vendor ramdisk regardless of the partition name.
-ifneq ($(wildcard $(KERNEL_MODULE_DIR)/modules.load),)
-    BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_FILE := $(strip $(shell cat $(KERNEL_MODULE_DIR)/modules.load))
-else
-    BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_FILE := $(strip $(shell cat $(KERNEL_MODULE_DIR)/vendor_boot.modules.load))
-endif
+# Kernel modules that are listed in modules.load
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_FILE := $(strip $(shell cat $(TARGET_KERNEL_DIR)/vendor_ramdisk/lib/modules/modules.load))
 ifndef BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_FILE
-$(error vendor_boot.modules.load not found or empty)
+$(error modules.load not found or empty)
 endif
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_EXTRA)
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD += $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD_FILE)
