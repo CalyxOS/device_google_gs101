@@ -315,7 +315,6 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    DMServiceOverlayProductGs101 \
     EuiccSupportPixelOverlay \
     FrameworkResOverlayProductGs101 \
     FrameworkResOverlayVendorGs101 \
@@ -324,7 +323,6 @@ PRODUCT_PACKAGES += \
     GlanceableHubSysuiConfigOverlay \
     GoogleConfigOverlay \
     GooglePermissionControllerSafetyCenterOverlay \
-    PixelConfigOverlay2019 \
     PixelConfigOverlay2021 \
     PixelConfigOverlayCommon \
     PixelConnectivityOverlay2022_midyear \
@@ -338,13 +336,11 @@ PRODUCT_PACKAGES += \
     SystemUIGoogleOverlayProductGs101 \
     SystemUIGoogleOverlayVendorGs101 \
     TeleServiceOverlayProductGs101 \
-    TeleServiceOverlayVendorGs101 \
-    TelephonyProviderOverlayProductGs101
+    TeleServiceOverlayVendorGs101
 
 PRODUCT_PACKAGES += \
     FrameworkResOverlayLineageGs101 \
-    LineageSdkOverlayGs101 \
-    SimpleDeviceConfigOverlayGs101
+    LineageSdkOverlayGs101
 
 # Parts
 PRODUCT_PACKAGES += \
