@@ -22,10 +22,6 @@ persist.bluetooth.bqr.event_mask=30
 persist.bluetooth.bqr.min_interval_ms=500
 persist.bluetooth.firmware.selection=BCM.hcd
 
-# Camera
-ro.vendor.camera.extensions.package=com.google.android.apps.camera.services
-ro.vendor.camera.extensions.service=com.google.android.apps.camera.services.extensions.service.PixelExtensions
-
 # Cutout
 ro.support_hide_display_cutout=true
 
