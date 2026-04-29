@@ -92,6 +92,9 @@ ro.oem_unlock_supported=1
 # OMX
 vendor.media.omx=0
 
+# Security patch
+ro.vendor.kernel.security_patch=2026-03-05
+
 # SoC
 ro.soc.manufacturer=Google
 ro.soc.model=Tensor
