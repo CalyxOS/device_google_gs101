@@ -98,7 +98,7 @@ ro.oem_unlock_supported=1
 vendor.media.omx=0
 
 # Security patch
-ro.vendor.kernel.security_patch=2026-07-05
+ro.vendor.kernel.security_patch=2026-08-05
 
 # SoC
 ro.soc.manufacturer=Google
