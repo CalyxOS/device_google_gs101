@@ -366,6 +366,11 @@ PRODUCT_COPY_FILES += \
 # Touch
 include hardware/google/pixel/touch/device.mk
 
+# USB
+PRODUCT_PACKAGES += \
+    init.gs101.usb_data_sync.rc \
+    usb_data_sync
+
 # VINTF
 DEVICE_MANIFEST_FILE += \
     device/google/gs101/vintf/manifest.xml

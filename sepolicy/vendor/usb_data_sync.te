@@ -1,0 +1,6 @@
+type vendor_usb_data_sync, domain;
+type vendor_usb_data_sync_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_usb_data_sync)
+
+hal_client_domain(vendor_usb_data_sync, hal_usb)

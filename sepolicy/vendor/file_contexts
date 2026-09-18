@@ -400,6 +400,7 @@
 /vendor/bin/twoshay u:object_r:twoshay_exec:s0
 /vendor/bin/ufs_firmware_update\.sh u:object_r:ufs_firmware_update_exec:s0
 /vendor/bin/usb_accessory_utils u:object_r:vendor_usb_aoa_helper_exec:s0
+/vendor/bin/usb_data_sync    u:object_r:vendor_usb_data_sync_exec:s0
 /vendor/bin/usf_reg_edit u:object_r:vendor_usf_reg_edit:s0
 /vendor/bin/usf_stats u:object_r:vendor_usf_stats:s0
 /vendor/bin/wfc-pkt-router u:object_r:pktrouter_exec:s0

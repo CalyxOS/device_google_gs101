@@ -1,0 +1,25 @@
+#
+# SPDX-FileCopyrightText: 2023 The Calyx Institute
+# SPDX-License-Identifier: Apache-2.0
+#
+
+service disable_usb_data /system/bin/bootstrap/linkerconfig --help
+    onrestart write /sys/devices/platform/11110000.usb/usb_data_enabled 0
+    onrestart exec_background u:r:usb_data_sync:s0 nobody system -- /vendor/bin/usb_data_sync 0
+    user nobody
+    group nobody
+    oneshot
+
+service enable_usb_data /system/bin/bootstrap/linkerconfig --help
+    onrestart exec_background u:r:usb_data_sync:s0 nobody system -- /vendor/bin/init.enable_usb_data.sh /sys/devices/platform/11110000.usb/usb_data_enabled 1 /sys/class/typec/port0-partner /sys/class/typec/port0/data_role [host] /sys/devices/platform/11110000.usb/dwc3_exynos_otg_id 0 1 /sys/devices/platform/11110000.usb/dwc3_exynos_otg_b_sess 0 1
+    onrestart exec_background u:r:usb_data_sync:s0 nobody system -- /vendor/bin/usb_data_sync 1
+    user nobody
+    group nobody
+    oneshot
+
+service vendor.usb /vendor/bin/hw/android.hardware.usb-service.gs101
+    override
+    class hal
+    user system
+    group system shell wakelock
+    capabilities WAKE_ALARM BLOCK_SUSPEND
