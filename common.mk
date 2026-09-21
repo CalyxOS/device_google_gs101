@@ -341,7 +341,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     FrameworkResOverlayLineageGs101 \
-    LineageSdkOverlayGs101
+    LineageSdkOverlayGs101 \
+    SettingsOverlayGs101
 
 # Parts
 PRODUCT_PACKAGES += \
